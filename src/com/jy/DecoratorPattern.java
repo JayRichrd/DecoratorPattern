@@ -7,6 +7,7 @@ public class DecoratorPattern {
 		Sweet cake = new Cake();
 		System.out.println("您购买清单:" + cake.getDescription() + " = " + cake.getPrice() + "元");
 
+		// TODO 使用工厂模式来管理过多的具体装饰类
 		// 装饰后
 		Sweet fruitDecorator = new FruitDecorator(cake);
 		System.out.println("您购买清单:" + fruitDecorator.getDescription() + " = " + fruitDecorator.getPrice() + "元");
